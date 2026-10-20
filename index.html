@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reeve — Spearfishing</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<div class="wrapper">
+
+  <header>
+    <h1 id="site-title">Reeve</h1>
+    <p class="intro">I like spearfishing. A lot.</p>
+  </header>
+
+  <hr>
+
+  <main id="main">
+    <div class="content">
+
+      <section class="card">
+        <h2>Why spearfishing</h2>
+        <p>
+          It is the quietest way I know to be in the sea. No engine, no line,
+          no bait — just breath-hold diving and a lot of waiting.
+        </p>
+        <h3>What I like about it</h3>
+        <ul class="facts">
+          <li>You only take what you can reach on one breath.</li>
+          <li>It is selective in a way that netting never is.</li>
+          <li>The diving itself is most of the appeal.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>The fish</h2>
+        <figure>
+          <img src="fish.svg" alt="Simple line drawing of a fish, seen from the side"
+               width="300" height="150">
+          <figcaption>A fish, rendered with more optimism than accuracy.</figcaption>
+        </figure>
+        <pre aria-label="ASCII art of a fish">  &gt;&lt;(((º&gt;</pre>
+      </section>
+
+    </div>
+    <!-- Form added with OpenAI Codex assistance, 20 October 2026. -->
+    <section class="card">
+      <h2>Record a fish</h2>
+      <form id="fish-form">
+        <label for="fish-name">Fish</label>
+        <select id="fish-name" name="fish" required>
+          <option value="">Choose a fish</option>
+          <option value="mackerel">Mackerel</option>
+          <option value="bass">Bass</option>
+          <option value="pollock">Pollock</option>
+        </select>
+
+        <label for="fish-length">Length in centimetres</label>
+        <input id="fish-length" name="length" type="number" min="1" max="500" step="1" required>
+
+        <button type="submit">Show my fish</button>
+      </form>
+      <p id="fish-result" role="status"></p>
+      <noscript>Turn on JavaScript to show your fish summary.</noscript>
+    </section>
+    <section class="card weather-card">
+      <h2>Weather in Singapore</h2>
+      <p>Check the current temperature and wind speed.</p>
+      <button id="weather-button" type="button">Check weather</button>
+      <p id="weather-status" role="status"></p>
+
+      <p>Weather data from <a href="https://open-meteo.com/">Open-Meteo</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      More on
+      <a href="https://en.wikipedia.org/wiki/Spearfishing">spearfishing at Wikipedia</a>
+    </p>
+  </footer>
+
+</div>
+
+</body>
+</html>
+
+
+
